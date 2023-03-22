@@ -1,0 +1,45 @@
+/** @format */
+
+:root {
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Noto Sans', sans-serif;
+
+  --default-black-clr: #000;
+  --default-black-bg:#131313;
+  --default-black-clr-200:#1e1e1e;
+  --default-white-clr: #ffffff;
+  --default-white-clr-200: #dddddd;
+  --default-white-bg: #e4e4dd;
+ 
+--primary-clr:var(--default-white-clr)
+--secondary-clr:var(--default-black-clr)
+
+  --fs-10: .625rem;
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-15: .9375rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-22: 1.375rem;
+  --fs-24: 1.5rem;
+  --fs-26: 1.625rem;
+  --fs-28: 1.75rem;
+  --fs-30: 1.875rem;
+  --fs-32: 2rem;
+  --fs-34: 2.125rem;
+  --fs-36: 2.25rem;
+  --fs-38: 2.375rem;
+  --fs-40: 2.5rem;
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-800: 800;
+
+  --lh-300: 1.2;
+  --lh-400: 1.3;
+  --lh-500: 1.4;
+  --lh-600: 1.5;
+}

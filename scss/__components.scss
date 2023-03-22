@@ -1,0 +1,72 @@
+/** @format */
+
+// buttons
+
+.primary-btn {
+  color: var(--default-white-clr-200);
+  font-size: var(--fs-14);
+  background: url('/public/circle1.svg');
+  background-repeat: no-repeat;
+  background-position: 0 26px;
+  background-size: 7px;
+  padding: 20px 13px;
+  letter-spacing: 2px;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff00;
+    left: -20px;
+    top: 6px;
+    transform: scale(0);
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform-origin: left;
+  }
+  &:hover {
+    background: url('/public/angle-right.svg');
+    background-repeat: no-repeat;
+    background-position: 23px 26px;
+    background-size: 7px;
+    padding: 20px 13px 20px 60px;
+    &::after {
+      background-color: #ffffff0f;
+      transform: scale(1);
+      left: -1px;
+    }
+  }
+}
+
+.magnet {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+div[class*='kursor'].kursor--1 {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(var(--k-color), 1);
+  z-index: 999999999999999999;
+}
+.kursorChild.kursorChild--hidden {
+  z-index: 999999999999999999;
+}
+aside.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #262626;
+  height: 100vh;
+  z-index: 999;
+  transform: translateY(800px);
+  transition: all 1s ease-in-out;
+  // animation: slideup2 1s ease-in-out 5s;
+
+  &.open {
+    transform: translateY(0px);
+  }
+}

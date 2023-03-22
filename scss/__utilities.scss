@@ -1,0 +1,31 @@
+/** @format */
+
+.container {
+  width: min(120rem, 95%);
+  margin-inline: auto;
+}
+
+.container-inner {
+  max-width: min(73rem, 95%);
+  margin-inline: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.fixed {
+  position: fixed !important;
+  inset: 0;
+}
